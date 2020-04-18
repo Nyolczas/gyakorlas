@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyTable</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex">
+            <div class="d-flex align-items-center justify-content-center col-2 p-0 symbol-column">
+                <h1>
+                    EURUSD
+                </h1>
+            </div>
+            <div class="col-10 strategy-column">
+                <div class="w-100 strategy-row">
+                    <form class="row" action="" method="POST">
+                        <!-- @csrf
+                        @method('PUT') -->
+                        <a href="#" class="col-2">EURUSD_H_MSR</a>
+                        <div class="col-2">XmDemo</div>
+                        <div class="col-2">XmLive</div>
+                        <div class="col-2">AdmDemo</div>
+                        <div class="col-2">AdmLive</div>
+                        <div class="col-2">Frissítve
+                            <button class="btn btn-success mx-1 py-0" type="submit">V</button>
+                        </div>
+                    </form>
+                    <form action="{{ route('Welcome.destroy', [$xss->id]) }}" class="tetel-delete-btn">
+                        <!-- @csrf
+                        @method('DELETE') -->
+                        <input type="submit" value="X" class="btn btn-danger mt-0 py-0">
+                    </form>
+                </div>
+                <div class="strategy p2">strategy</div>
+                <div class="strategy p2">strategy</div>
+                <div class="strategy p2">strategy</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
